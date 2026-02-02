@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 // Constants
-const STORAGE_KEY = 'sms_temp_state_v3';
+const STORAGE_KEY = 'sms_temp_state_final';
 const REGIONS = [
     { flag: '🇺🇸', code: '+1', name: 'USA' },
     { flag: '🇬🇧', code: '+44', name: 'UK' },
@@ -17,7 +17,7 @@ const REGIONS = [
     { flag: '🇧🇪', code: '+32', name: 'Belgium' }
 ];
 
-// --- COMPONENTS ---
+// --- INTERNAL COMPONENTS ---
 
 const Toast = ({ message, type = 'success', onClose }: { message: string, type?: 'success' | 'error', onClose: () => void }) => {
     useEffect(() => {
@@ -49,7 +49,7 @@ const SplashScreen = () => (
             </div>
             <div className="text-center">
                 <h1 className="text-2xl font-bold text-slate-900 tracking-tight">SMS Temp</h1>
-                <p className="text-slate-500 text-sm mt-1">Secure Protocol v4.3.0</p>
+                <p className="text-slate-500 text-sm mt-1">Secure Protocol v5.0.0</p>
             </div>
         </div>
         <div className="absolute bottom-12 flex flex-col items-center space-y-4">
